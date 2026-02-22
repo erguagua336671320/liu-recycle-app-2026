@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a2a3a"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 创始人区域 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创始人简历"
+            android:textColor="#00c896"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+            <!-- 刘总照片区域 -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/liuPhoto"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_liuzong_placeholder"
+                android:scaleType="centerCrop"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#00c896"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 点击计数器 -->
+            <TextView
+                android:id="@+id/clickCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="点击次数: 0/12"
+                android:textColor="#ffffff"
+                android:background="#66000000"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <!-- 创始人简介 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="刘总，出生于2012年，是中国环保产业最年轻的杰出企业家之一。"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="刘总曾任公共卫生管理委员会主任，在公共卫生和环境管理领域有着丰富的经验和卓越的贡献。"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="年少有成的刘总以其前瞻性的眼光和创新精神，立志将全宇宙垃圾承包，打造跨星际的垃圾回收处理体系。"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="在刘总的带领下，公司迅速发展成为行业内的技术领导者，开创了多项垃圾回收处理的创新技术。"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="刘总的愿景是通过科技手段实现垃圾的100%回收利用，为地球和宇宙的可持续发展做出贡献。"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+        <!-- 公司简介标题 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司简介"
+            android:textColor="#00c896"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刘总回收生物科技有限公司是一家专注于垃圾回收处理的高科技企业，致力于通过创新技术实现垃圾的资源化、减量化和无害化处理。"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我们拥有国际领先的垃圾分拣技术、生物降解技术和资源再生技术，能够处理各类生活垃圾、工业垃圾和特殊垃圾。"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="公司秉承'科技环保，绿色未来'的理念，不断研发新技术，拓展新业务，为实现'全宇宙垃圾承包'的宏伟目标而不懈努力。"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
