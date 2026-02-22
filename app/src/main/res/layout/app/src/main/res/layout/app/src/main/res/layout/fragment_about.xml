@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a2a3a"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于我们"
+            android:textColor="#00c896"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我们是一家以科技创新为驱动的垃圾回收处理企业，致力于为地球和宇宙的可持续发展提供解决方案。"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 公司干部卡片 -->
+        <include layout="@layout/item_company_card" 
+            android:id="@+id/card_cadres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 管理技术卡片 -->
+        <include layout="@layout/item_company_card" 
+            android:id="@+id/card_management"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 先进设备卡片 -->
+        <include layout="@layout/item_company_card" 
+            android:id="@+id/card_equipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 优秀人才卡片 -->
+        <include layout="@layout/item_company_card" 
+            android:id="@+id/card_talent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
